@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+    height: 100vh;
+    background-color: #B37C7C;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+  &-wrapper{
+    perspective: 1000px; // на сколько в глубину будет наклоняться карточка
+    transform-style: preserve-3d; //чтобы анимация была трехмерной
+  }
+  background-color: #F7BFBF;
+  width: 250px;
+  height: 250px;
+}
